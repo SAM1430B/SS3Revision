@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{6E5DA5A5-CBEC-40BA-849D-E6B6FC5FA84E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features">
+      <UniqueIdentifier>{88B76388-E584-4208-B3FC-A44B8E5D1C8B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Proxy">
+      <UniqueIdentifier>{35812408-B532-4E9C-9FC0-4928F816D3FB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Core\Config.h"><Filter>Core</Filter></ClInclude>
+    <ClInclude Include="src\Core\DisplayEnvironment.h"><Filter>Core</Filter></ClInclude>
+    <ClInclude Include="src\Core\GameAddresses.h"><Filter>Core</Filter></ClInclude>
+    <ClInclude Include="src\Core\Log.h"><Filter>Core</Filter></ClInclude>
+    <ClInclude Include="src\Core\Memory.h"><Filter>Core</Filter></ClInclude>
+    <ClInclude Include="src\Features\Features.h"><Filter>Features</Filter></ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\DllMain.cpp" />
+    <ClCompile Include="src\Core\Config.cpp"><Filter>Core</Filter></ClCompile>
+    <ClCompile Include="src\Core\DisplayEnvironment.cpp"><Filter>Core</Filter></ClCompile>
+    <ClCompile Include="src\Core\GameAddresses.cpp"><Filter>Core</Filter></ClCompile>
+    <ClCompile Include="src\Core\Log.cpp"><Filter>Core</Filter></ClCompile>
+    <ClCompile Include="src\Core\Memory.cpp"><Filter>Core</Filter></ClCompile>
+    <ClCompile Include="src\Proxy\DInput8Proxy.cpp"><Filter>Proxy</Filter></ClCompile>
+    <ClCompile Include="src\Features\OnlineGameList.cpp"><Filter>Features</Filter></ClCompile>
+    <ClCompile Include="src\Features\SerialPortScan.cpp"><Filter>Features</Filter></ClCompile>
+    <ClCompile Include="src\Features\MultipleInstances.cpp"><Filter>Features</Filter></ClCompile>
+    <ClCompile Include="src\Features\ResolutionList.cpp"><Filter>Features</Filter></ClCompile>
+    <ClCompile Include="src\Features\SavedResolution.cpp"><Filter>Features</Filter></ClCompile>
+    <ClCompile Include="src\Features\InterfaceScaling.cpp"><Filter>Features</Filter></ClCompile>
+    <ClCompile Include="src\Features\WrapperBorder.cpp"><Filter>Features</Filter></ClCompile>
+    <ClCompile Include="src\Features\MinimizeRestore.cpp"><Filter>Features</Filter></ClCompile>
+    <ClCompile Include="src\Features\MaximizeWindow.cpp"><Filter>Features</Filter></ClCompile>
+    <ClCompile Include="src\Features\FullscreenToggle.cpp"><Filter>Features</Filter></ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dinput8.def"><Filter>Proxy</Filter></None>
+    <None Include="SS3Revision.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SS3Revision.rc" />
+  </ItemGroup>
+</Project>

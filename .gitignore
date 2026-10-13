@@ -1,0 +1,12 @@
+# Visual Studio
+.vs/
+bin/
+obj/
+*.user
+*.aps
+*.ipch
+*.ilk
+*.pdb
+*.iobj
+*.ipdb
+*.log
